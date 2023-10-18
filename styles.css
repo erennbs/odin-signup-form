@@ -1,5 +1,50 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./fonts/Norse-Bold.otf);
+    font-weight: bold;
+}
+
 body {
     height: 100vh;
     margin: 0;
+    display: flex;
+}
 
+.left-section {
+    background-color: greenyellow;
+    width: 35%;
+}
+
+.right-section {
+    width: 65%;
+    background-color: #f9fafbff;
+}
+
+.logo-container {    
+    position: relative;
+    top: 25%;
+
+    height: 150px;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.337);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo span {
+    font-family: "Norse Bold";
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+}
+
+img#logo {
+    height: 90%;
+    width: auto;
 }
