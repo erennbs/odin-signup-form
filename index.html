@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign-Up</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
     </head>
 
     <body>
@@ -29,33 +30,38 @@
                         <div class="form-element">
                             <label for="first-name">FIRST NAME</label>
                             <input type="text" name="first-name" id="first-name">
+                            <span class="error hide">* Enter a name</span>
                         </div>
 
                         <div>
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" name="last-name" id="last-name">
+                            <input type="text" name="last-name" id="last-name">   
+                            <span class="error hide">* Enter a last name</span>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-element">
                             <label for="email">EMAIL</label>
                             <input type="email" name="email" id="email">
+                            <span class="error hide">* Wrong email</span>
                         </div>
 
                         <div class="form-element">
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="tel" name="phone" id="phone">
+                            <input type="tel" name="phone" id="phone" minlength="10" maxlength="10">
+                            <span class="error hide">* Phone number should be 10 digits</span>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-element">
                             <label for="password">PASSWORD</label>
                             <input type="password" name="password" id="password">
+                            <span class="error hide">* Passwords don't match</span>
                         </div>
 
                         <div class="form-element">
                             <label for="confirm">CONFIRM PASSWORD</label>
-                            <input type="password" name="vonfirm" id="confirm">
+                            <input type="password" name="confirm" id="confirm">
                         </div>
                     </div>
                 </div>

@@ -26,10 +26,15 @@ input {
     outline: none;
 }
 
+input:invalid {
+    border-color: rgb(226, 52, 52);
+}
+
 input:focus {
     border-color: rgb(37, 97, 250);
     box-shadow: 0px 7px 10px -5px rgba(0,0,0,0.17);
 }
+
 
 a {
     text-decoration: none;
@@ -102,7 +107,7 @@ img#logo {
 .form-row {
     display: flex;
     gap: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 form button {
@@ -125,4 +130,18 @@ form button {
 .have-account {
     padding-left: 50px;
     font-size: 18px;
+}
+
+input.invalid {
+    border-color: rgb(226, 52, 52);
+}
+
+.error {
+    display: block;
+    color: rgb(226, 52, 52);
+    font-size: 12px;
+}
+
+.hide {
+    visibility: hidden;
 }
