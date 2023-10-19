@@ -42,7 +42,9 @@ a {
 }
 
 .left-section {
-    background-color: rgb(56, 131, 19);
+    position: relative;
+    background-image: url(./images/background-image.jpg);
+    background-size: cover;
     width: 35%;
 }
 
@@ -144,4 +146,16 @@ input.invalid {
 
 .hide {
     visibility: hidden;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    margin-left: 25%;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration:underline;
 }
